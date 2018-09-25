@@ -1,0 +1,282 @@
+/* Under The Hood */
+html { 
+    background: url("../images/bckgrnd.png") repeat-x 0 0 scroll;
+    height:100%;
+    width:100%;
+}
+
+.wrap {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100%;
+    margin-bottom: 0px;
+}
+
+    /* Header Section */
+#header {
+    border-bottom-style: solid;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    background-color: black;
+    padding-left: 240px;
+}
+h1 {
+    width: fit-content;
+    height: 50px;
+    padding: 18px;
+    font-size: 20pt;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-right: 417px;
+    line-height: 50px;
+    font-weight: bold;
+    background-color: burlywood;
+}
+
+nav {
+    display: inline-block;
+    font-size: 14pt;
+}
+
+#nav1:hover, #nav2:hover, #nav3:hover {
+    color: white;
+}
+
+#nav1, #nav2 {
+    border-right: solid;
+    border-color: black;
+    padding: 10px; 
+    color: wheat;
+}
+
+#nav3 {
+    padding-left: 10px;
+    color: wheat;
+}
+    /* Header Section End */
+
+/* Bio Section */
+#bio {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    display: inline-block;
+    background-color: antiquewhite;
+}
+
+h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+    font-size: 18pt;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-color: black;
+    padding: 15px;
+    padding-left: 19px;
+}
+
+#bio-image {
+    width: 200px;
+    float: left;
+    padding: 18px;
+}
+
+p {
+    padding-right: 25px;
+    line-height: 25pt;
+}
+
+#p1 {
+    margin-top: 18px;
+}
+
+#p2 {
+    margin-left: 18px;
+}
+
+#p3 {
+    margin-left: 18px;
+    margin-bottom: 20px;
+}
+    /* Bio Section End */
+
+/* Portfolio Section !!NEEDS WORK!! */
+
+.portfolio { 
+    background: antiquewhite;
+    height: 685px;
+}
+
+.blocks {
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+#pic1, #pic2, #pic3, #pic4  {
+    position: relative;
+}
+
+#image1 {
+    width: 300px;
+    padding: 30px;
+    float: left;
+}
+
+#image2 {
+    width: 300px;
+    height: 200px;
+    padding: 30px;
+    margin-left: 140px;
+    float: left;
+}
+
+#image3 {
+    width: 200px;
+    padding: 30px;
+    margin-left: 55px;
+    float: left;
+}
+
+#image4{
+    width: 200px;
+    padding: 30px;
+    margin-left: 240px;
+    float: left;
+}
+
+h3 {
+    color: black; 
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 15pt;
+    background: burlywood;
+    padding: 10px;
+    text-align: center;
+}
+
+#span1 {
+    position: absolute;
+    bottom: -75px;
+    right: 530px;
+    width: 300px;
+}
+
+#span2{
+    position: absolute;
+    bottom: -75px;
+    right: 30px;
+    width: 300px;
+}
+
+#span3 {
+    position: absolute;
+    bottom: -550px;
+    right: 575px;
+    width: 200px;
+}
+
+#span4 {
+    position: absolute;
+    bottom: -550px;
+    right: 75px;
+    width: 200px;
+}
+
+#link1:visited, #link2:visited, #link3:visited, #link4:visited { 
+    color: black;
+}
+
+#link1:hover, #link2:hover, #link3:hover, #link4:hover {
+    color: wheat;
+}
+
+/* span { */
+    /* Do I need this^^^^^??? It's in my HTML too so delete it if I don't need it*/
+/* } */
+    /* Portfolio Section End */
+
+/* Contact Section */
+
+.form {
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid #CCC;
+    background-color: antiquewhite;
+    padding: 18px;
+}
+
+form div + div {
+    margin-top: 1.5em;
+}
+  
+label {
+    display: inline-block;
+    width: 75px;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    width: 900px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 3em;
+    font-size: 9pt;
+}
+  
+input:focus, textarea:focus {
+    border-color: #000;
+}
+  
+textarea {
+    vertical-align: top;
+    height: 25em;
+}
+
+#c-head {
+    background-color: antiquewhite;
+    padding-left: 18px;
+}
+
+button {
+    width: 80px;
+    height: 20px;
+}
+
+/* Contact Section End */
+  
+/* Footer Section */
+
+.push {
+    height: 10px;
+}
+
+#footer1, #footer2 { 
+    position: sticky;
+}
+
+#footer1 {
+    height: 40px;
+    background-color: burlywood;
+}
+
+#footer2 {
+    height: 80px;
+    background-color: black;
+}
+
+.social {
+    margin: 0 auto;
+    width: 10%;
+    padding-top: 19px;
+}
+
+#logos {
+    width: 35px;
+    margin-right: 10px;
+}
+
+#logos:hover {
+    background-color: wheat;
+}
+    /* Footer Section and CSS End */

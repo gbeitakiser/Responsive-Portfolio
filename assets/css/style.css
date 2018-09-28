@@ -278,15 +278,7 @@ button {
 
 /* Media Queries */
 
-@media screen and (max-width: 1430px) {
-    #footer2 {
-        height: 150px;
-    }
 
-    .social {
-        width: 15%;
-    }
-}
 
 @media screen and (max-width: 980px) {
 
@@ -319,6 +311,73 @@ button {
         width: 640px;
     }
 
+    .portfolio {
+        height: 650px;
+    }
+
+    #image1 {
+        width: 290px;
+        margin-left: 20px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    
+    #image2 {
+        width: 290px;
+        margin-left: 20px;
+        margin-top: -10px;
+    }
+
+    #image3 {
+        margin-left: 40px;
+        width: 200px;
+    }
+
+    #image4 {
+        width: 200px;
+        margin-left: 105px;
+    }
+
+    .blocks {
+        margin: 0px 0px 0px 0px;
+
+    }
+
+    #span1 {
+        bottom: -70px;
+        right: 380px;
+        width: 290px;
+        line-height: 2em;
+        font-size: 8pt;
+
+    }
+
+    #span2 {
+        bottom: -70px;
+        right: 30px;
+        width: 290px;
+        line-height: 2em;
+        font-size: 8pt;
+
+    }
+
+    #span3 {
+        bottom: -530px;
+        right: 430px;
+        width: 200px;
+        line-height: 2em;
+        font-size: 8pt;
+
+    }
+
+    #span4 {
+        bottom: -530px;
+        right: 65px;
+        width: 200px;
+        line-height: 2em;
+        font-size: 8pt;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -338,7 +397,7 @@ button {
     }
 
     .social {
-        width: 25%;
+        width: 19%;
     }
 
     h1 {
@@ -356,7 +415,74 @@ button {
 
     input, textarea {
         width: 690px;
-    }    
+    }
+
+    .portfolio {
+        height: 650px;
+    }
+
+    #image1 {
+        width: 300px;
+        margin-left: 20px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    
+    #image2 {
+        width: 300px;
+        margin-left: 25px;
+        margin-top: -10px;
+    }
+
+    #image3 {
+        margin-left: 52px;
+        width: 200px;
+    }
+
+    #image4 {
+        width: 200px;
+        margin-left: 105px;
+    }
+
+    .blocks {
+        margin: 0px 0px 0px 0px;
+
+    }
+
+    #span1 {
+        bottom: -70px;
+        right: 398px;
+        width: 300px;
+        line-height: 2em;
+        font-size: 8pt;
+
+    }
+
+    #span2 {
+        bottom: -70px;
+        right: 33px;
+        width: 300px;
+        line-height: 2em;
+        font-size: 8pt;
+
+    }
+
+    #span3 {
+        bottom: -530px;
+        right: 446px;
+        width: 200px;
+        line-height: 2em;
+        font-size: 8pt;
+
+    }
+
+    #span4 {
+        bottom: -530px;
+        right: 81px;
+        width: 200px;
+        line-height: 2em;
+        font-size: 8pt;
+    }
 
 }
 
@@ -404,5 +530,65 @@ button {
 
     input, textarea {
         width: 565px;
+    }
+
+    .portfolio {
+        height: 2275px;
+    }
+
+    #image1 {
+        width: 500px;
+        margin-left: 40px;
+    }
+    
+    #image2 {
+        width: 500px;
+        height: 300px;
+        margin-left: 20px;
+    }
+
+    #image3, #image4 {
+        margin-left: 20px;
+        width: 500px;
+    }
+
+    .blocks {
+        margin: 0px 0px 0px 0px;
+
+    }
+
+    #span1 {
+        bottom: -110px;
+        right: 50px;
+        width: 500px;
+        line-height: 3em;
+        font-size: 11pt;
+
+    }
+
+    #span2 {
+        bottom: -505px;
+        right: 50px;
+        width: 500px;
+        line-height: 3em;
+        font-size: 11pt;
+
+    }
+
+    #span3 {
+        bottom: -1395px;
+        right: 50px;
+        width: 500px;
+        line-height: 3em;
+        font-size: 11pt;
+
+    }
+
+    #span4 {
+        bottom: -2120px;
+        right: 50px;
+        width: 500px;
+        line-height: 3em;
+        font-size: 11pt;
     }
 }

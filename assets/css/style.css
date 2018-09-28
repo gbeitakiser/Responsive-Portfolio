@@ -44,8 +44,6 @@ nav {
 }
 
 #nav1, #nav2 {
-    border-right: solid;
-    border-color: black;
     padding: 10px; 
     color: wheat;
 }
@@ -87,6 +85,7 @@ p {
 
 #p1 {
     margin-top: 18px;
+    margin-left: 18px;
 }
 
 #p2 {
@@ -189,10 +188,6 @@ h3 {
 #link1:hover, #link2:hover, #link3:hover, #link4:hover {
     color: wheat;
 }
-
-/* span { */
-    /* Do I need this^^^^^??? It's in my HTML too so delete it if I don't need it*/
-/* } */
     /* Portfolio Section End */
 
 /* Contact Section */
@@ -280,3 +275,134 @@ button {
     background-color: wheat;
 }
     /* Footer Section and CSS End */
+
+/* Media Queries */
+
+@media screen and (max-width: 1430px) {
+    #footer2 {
+        height: 150px;
+    }
+
+    .social {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    .wrap {
+        width: 700px;
+        margin: inherit;
+    }
+
+    #footer2 {
+        height: 150px;
+    }
+
+    .social {
+        width: 33%;
+    }
+    
+    #header {
+        padding-left: 20px;
+    }
+
+    h1 {
+        margin-right: 0px;
+    }
+
+    #nav1 {
+        padding-left: 400px;
+    }
+
+    input, textarea {
+        width: 640px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    html {
+        background: url("../images/bckgrnd.png");
+        background-repeat: repeat-y;
+    }
+
+    .wrap {
+        width: 728px;
+        margin: auto
+    }
+
+    #footer2 {
+        height: 150px;
+    }
+
+    .social {
+        width: 25%;
+    }
+
+    h1 {
+        margin-right: 0px;
+    }
+
+    #header {
+        padding-left: 21px;
+    }
+
+    #nav1 {
+        margin-left: 185px;
+        padding-left: 0px;
+    }
+
+    input, textarea {
+        width: 690px;
+    }    
+
+}
+
+@media screen and (max-width: 640px) {
+
+    html {
+        background: url("../images/bckgrnd.png");
+        background-repeat: repeat-y;
+    }
+
+    .wrap {
+        width: 600px;
+        margin: auto;
+    }
+
+    #footer2 {
+        height: 150px;
+    }
+
+    .social {
+        width: 23%;
+    }
+
+    #header {
+        width: 100%;
+        position: static;
+        padding-left: 0px;
+    }
+
+    h1 {
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+    }
+
+    nav {
+        height: 40px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    #nav1 {
+        margin-left: 0px;
+        padding-left: 200px;
+    }
+
+    input, textarea {
+        width: 565px;
+    }
+}

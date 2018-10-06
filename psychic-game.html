@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Psychic Game</title>
+</head>
+<body>
+<!-- HTML -->
+    <h1>Psychic Game</h1>
+    <h3>Guess what letter I'm thinking of?</h3>
+
+    
+<!-- Getting HTML ready for manipulatable vars -->
+
+    <p id="welcome"></p>
+    <p id="wins"></p>
+    <p id="losses"></p>
+    <p id="guessesLeft"></p>
+    <p id="yourGuesses"></p>
+
+
+    <script type="text/javascript">
+
+    // Setting up all my global variables
+
+    var wins = 0;
+    var losses = 0;
+    var guessesLeft = 9;
+    var playerGuesses = [];
+    var compGuess = "";
+    var soreLoser = 0;
+    
+    // Vars to help me manipulate HTML
+
+    var printWelcome = document.getElementById("welcome");
+    var printWins = document.getElementById("wins");
+    var printLosses = document.getElementById("losses");
+    var printGuesseleft = document.getElementById("guessesLeft");
+    var printPlayerGuess = document.getElementById("yourGuesses");
+
+    printWelcome.textContent = "Welcome To The Psychic Game! Enter Your First Guess";
+
+    var guesses = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", 
+    "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+
+    // Functions
+
+    function guessLetter() {
+        var generateLetter = guesses[Math.floor(Math.random() * (guesses.length - 1))];
+        compGuess = generateLetter;
+    }
+
+    function startGame () {
+
+    guessLetter();   
+    console.log("---")
+    console.log(compGuess);
+    console.log("---")
+
+
+    document.onkeyup = function(event) {
+        var playerPress = event.key;
+
+
+        playerGuesses.push(playerPress);
+
+
+
+        if (guessesLeft > 0) {
+            if (playerPress === compGuess) {
+                alert("You Guessed Right!");
+            wins++;
+            gameOver();
+            checkLoser();
+            }
+
+            else {
+                guessesLeft -= 1;
+                checkLoser();
+            }
+        }
+
+        function checkLoser() {
+        if (guessesLeft === 0 ) {
+            alert("Game Over. You Lose!")
+            losses += 1;
+            gameOver();
+        }
+        }
+
+
+
+        console.log(guessesLeft);
+        printWelcome.textContent = "";
+        printWins.textContent = "Wins: " + wins;
+        printLosses.textContent = "Losses: " + losses;
+        printGuesseleft.textContent = "Guesses Left: " + guessesLeft;
+        printPlayerGuess.textContent = "You've Guessed: " + playerGuesses;
+    }
+    };
+
+
+
+    function gameOver () {
+        soreLoser++
+        playerGuesses = [];
+        guessesLeft = 9;
+        if (soreLoser > 3 && wins === 0) {
+        alert("Okay, you kind of suck at this. Here's a hint, open the console to see the correct answer.")
+    }
+        guessLetter();
+        startGame();
+    }
+
+    startGame();  
+    
+    </script>
+    
+</body>
+</html>

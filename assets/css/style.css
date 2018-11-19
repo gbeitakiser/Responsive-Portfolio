@@ -112,7 +112,7 @@ p {
     margin-top: 20px;
 }
 
-#pic1, #pic2, #pic3, #pic4  {
+#pic1, #pic2, #pic3, #pic4 #pic5 #pic6  {
     position: relative;
 }
 
@@ -137,7 +137,21 @@ p {
     float: left;
 }
 
-#image4{
+#image4 {
+    width: 200px;
+    padding: 30px;
+    margin-left: 240px;
+    float: left;
+}
+
+#image5 {
+    width: 200px;
+    padding: 30px;
+    margin-left: 55px;
+    float: left;
+}
+
+#image6 {
     width: 200px;
     padding: 30px;
     margin-left: 240px;
@@ -181,11 +195,15 @@ h3 {
     width: 200px;
 }
 
-#link1:visited, #link2:visited, #link3:visited, #link4:visited { 
+/* #span5
+
+#span6 */
+
+#link1:visited, #link2:visited, #link3:visited, #link4:visited #link5:visited #link6:visited { 
     color: black;
 }
 
-#link1:hover, #link2:hover, #link3:hover, #link4:hover {
+#link1:hover, #link2:hover, #link3:hover, #link4:hover #link5:hover #link6:hover {
     color: wheat;
 }
     /* Portfolio Section End */
@@ -338,6 +356,10 @@ button {
         margin-left: 105px;
     }
 
+    /* #image5
+
+    #image6 */
+
     .blocks {
         margin: 0px 0px 0px 0px;
 
@@ -377,6 +399,10 @@ button {
         line-height: 2em;
         font-size: 8pt;
     }
+
+    /* #span5
+
+    #span6 */
 
 }
 
@@ -444,6 +470,10 @@ button {
         margin-left: 105px;
     }
 
+    /* #image5
+
+    #image6 */
+
     .blocks {
         margin: 0px 0px 0px 0px;
 
@@ -483,6 +513,10 @@ button {
         line-height: 2em;
         font-size: 8pt;
     }
+
+    /* #span5
+
+    #span6 */
 
 }
 

@@ -1,6 +1,6 @@
 /* Under The Hood */
 html { 
-    background: url("../images/bckgrnd.jpg") repeat-x 0 0 scroll;
+    background: url("../images/bckgrnd.png") repeat-x 0 0 scroll;
     background-size: 139%;
 }
 
@@ -280,9 +280,14 @@ button {
 
 @media screen and (max-width: 980px) {
 
+    html {
+        background: url("../images/bckgrnd.png");
+        background-repeat: repeat-y;
+    }
+
     .wrap {
         width: 700px;
-        margin: inherit;
+        margin: 0 auto;;
     }
 
     #footer2 {
@@ -290,7 +295,7 @@ button {
     }
 
     .social {
-        width: 33%;
+        padding-left: 450px;
     }
     
     #header {
@@ -298,7 +303,8 @@ button {
     }
 
     h1 {
-        margin-right: 0px;
+        margin-right: -120px;
+        left: 120px;
     }
 
     #nav1 {
@@ -310,79 +316,70 @@ button {
     }
 
     .portfolio {
-        height: 650px;
+        height: 680px;
     }
 
-    #image1 {
-        width: 290px;
-        margin-left: 20px;
-        margin-top: 10px;
-        padding: 10px;
+    #pic1, #pic2, #pic3, #pic4, #pic5, #pic6  {
+        position: relative;
     }
     
-    #image2 {
-        width: 290px;
-        margin-left: 20px;
-        margin-top: -10px;
+    #pic1 {
+        left: 40px;
+        top: 20px;
+        float: left;
     }
-
+    
+    #pic2 {
+        left: 410px;
+        top: 20px;
+        float: left;
+    }
+    
+    #pic3 {
+        left: 40px;
+        top: 220px;
+        float: left;
+    }
+    
+    #pic4 {
+        left: 410px;
+        top: 220px;
+        float: left;
+    }
+    
+    #pic5 {
+        left: 40px;
+        top: 420px;
+        float: left;
+    }
+    
+    #pic6 {
+        left: 410px;
+        top: 420px;
+        float: left;
+    }
+    
+    #image1, #image2, #image3, #image4, #image5, #image6 {
+        position: absolute;
+        width: 250px;
+    }
+    
     #image3 {
-        margin-left: 40px;
-        width: 200px;
+        height: 168px;
     }
-
-    #image4 {
-        width: 200px;
-        margin-left: 105px;
+    
+    #image6 {
+        height: 168px;;
     }
-
-    /* #image5
-
-    #image6 */
 
     .blocks {
         margin: 0px 0px 0px 0px;
 
     }
 
-    #span1 {
-        bottom: -70px;
-        right: 380px;
-        width: 290px;
-        line-height: 2em;
-        font-size: 8pt;
-
-    }
-
-    #span2 {
-        bottom: -70px;
-        right: 30px;
-        width: 290px;
-        line-height: 2em;
-        font-size: 8pt;
-
-    }
-
-    #span3 {
-        bottom: -530px;
-        right: 430px;
-        width: 200px;
-        line-height: 2em;
-        font-size: 8pt;
-
-    }
-
-    #span4 {
-        bottom: -530px;
-        right: 65px;
-        width: 200px;
-        line-height: 2em;
-        font-size: 8pt;
-    }
-
-    /* #span5
-
-    #span6 */
+    #span1, #span2, #span3, #span4, #span5, #span6 {
+    position: absolute;
+    width: 250px;
 
 }
 
@@ -403,15 +400,17 @@ button {
     }
 
     .social {
-        width: 19%;
+        padding-left: 350px;
     }
 
     h1 {
         margin-right: 0px;
+        left: 0px;
     }
 
     #header {
         padding-left: 21px;
+        left: 0px;
     }
 
     #nav1 {
@@ -423,80 +422,69 @@ button {
         width: 690px;
     }
 
-    .portfolio {
-        height: 650px;
-    }
-
-    #image1 {
-        width: 300px;
-        margin-left: 20px;
-        margin-top: 10px;
-        padding: 10px;
+    #pic1, #pic2, #pic3, #pic4, #pic5, #pic6  {
+        position: relative;
     }
     
-    #image2 {
-        width: 300px;
-        margin-left: 25px;
-        margin-top: -10px;
+    #pic1 {
+        left: 40px;
+        top: 20px;
+        float: left;
     }
-
+    
+    #pic2 {
+        left: 440px;
+        top: 20px;
+        float: left;
+    }
+    
+    #pic3 {
+        left: 40px;
+        top: 220px;
+        float: left;
+    }
+    
+    #pic4 {
+        left: 440px;
+        top: 220px;
+        float: left;
+    }
+    
+    #pic5 {
+        left: 40px;
+        top: 420px;
+        float: left;
+    }
+    
+    #pic6 {
+        left: 440px;
+        top: 420px;
+        float: left;
+    }
+    
+    #image1, #image2, #image3, #image4, #image5, #image6 {
+        position: absolute;
+        width: 250px;
+    }
+    
     #image3 {
-        margin-left: 52px;
-        width: 200px;
+        height: 168px;
     }
-
-    #image4 {
-        width: 200px;
-        margin-left: 105px;
+    
+    #image6 {
+        height: 168px;;
     }
-
-    /* #image5
-
-    #image6 */
 
     .blocks {
         margin: 0px 0px 0px 0px;
 
     }
 
-    #span1 {
-        bottom: -70px;
-        right: 398px;
-        width: 300px;
-        line-height: 2em;
-        font-size: 8pt;
+    #span1, #span2, #span3, #span4, #span5, #span6 {
+    position: absolute;
+    width: 250px;
 
-    }
-
-    #span2 {
-        bottom: -70px;
-        right: 33px;
-        width: 300px;
-        line-height: 2em;
-        font-size: 8pt;
-
-    }
-
-    #span3 {
-        bottom: -530px;
-        right: 446px;
-        width: 200px;
-        line-height: 2em;
-        font-size: 8pt;
-
-    }
-
-    #span4 {
-        bottom: -530px;
-        right: 81px;
-        width: 200px;
-        line-height: 2em;
-        font-size: 8pt;
-    }
-
-    /* #span5
-
-    #span6 */
+}
 
 }
 
@@ -517,7 +505,7 @@ button {
     }
 
     .social {
-        width: 23%;
+        padding-left: 280px;
     }
 
     #header {
@@ -546,24 +534,58 @@ button {
         width: 565px;
     }
 
-    .portfolio {
-        height: 2275px;
-    }
 
-    #image1 {
-        width: 500px;
-        margin-left: 40px;
+    #pic1, #pic2, #pic3, #pic4, #pic5, #pic6  {
+        position: relative;
     }
     
-    #image2 {
-        width: 500px;
-        height: 300px;
-        margin-left: 20px;
+    #pic1 {
+        left: 40px;
+        top: 20px;
+        float: left;
     }
-
-    #image3, #image4 {
-        margin-left: 20px;
-        width: 500px;
+    
+    #pic2 {
+        left: 310px;
+        top: 20px;
+        float: left;
+    }
+    
+    #pic3 {
+        left: 40px;
+        top: 220px;
+        float: left;
+    }
+    
+    #pic4 {
+        left: 310px;
+        top: 220px;
+        float: left;
+    }
+    
+    #pic5 {
+        left: 40px;
+        top: 420px;
+        float: left;
+    }
+    
+    #pic6 {
+        left: 310px;
+        top: 420px;
+        float: left;
+    }
+    
+    #image1, #image2, #image3, #image4, #image5, #image6 {
+        position: absolute;
+        width: 250px;
+    }
+    
+    #image3 {
+        height: 168px;
+    }
+    
+    #image6 {
+        height: 168px;;
     }
 
     .blocks {
@@ -571,38 +593,10 @@ button {
 
     }
 
-    #span1 {
-        bottom: -110px;
-        right: 50px;
-        width: 500px;
-        line-height: 3em;
-        font-size: 11pt;
+    #span1, #span2, #span3, #span4, #span5, #span6 {
+    position: absolute;
+    width: 250px;
 
-    }
-
-    #span2 {
-        bottom: -505px;
-        right: 50px;
-        width: 500px;
-        line-height: 3em;
-        font-size: 11pt;
-
-    }
-
-    #span3 {
-        bottom: -1395px;
-        right: 50px;
-        width: 500px;
-        line-height: 3em;
-        font-size: 11pt;
-
-    }
-
-    #span4 {
-        bottom: -2120px;
-        right: 50px;
-        width: 500px;
-        line-height: 3em;
-        font-size: 11pt;
-    }
+}
+}
 }

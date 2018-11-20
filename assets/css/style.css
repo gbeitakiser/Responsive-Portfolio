@@ -1,8 +1,7 @@
 /* Under The Hood */
 html { 
-    background: url("../images/bckgrnd.png") repeat-x 0 0 scroll;
-    height:100%;
-    width:100%;
+    background: url("../images/bckgrnd.jpg") repeat-x 0 0 scroll;
+    background-size: 139%;
 }
 
 .wrap {
@@ -40,7 +39,7 @@ nav {
 }
 
 #nav1:hover, #nav2:hover, #nav3:hover {
-    color: white;
+    color: rgb(161, 156, 146);
 }
 
 #nav1, #nav2 {
@@ -102,7 +101,7 @@ p {
 
 .portfolio { 
     background: antiquewhite;
-    height: 900px;
+    height: 990px;
 }
 
 .blocks {
@@ -118,46 +117,51 @@ p {
 
 #pic1 {
     left: 60px;
+    top: 20px;
     float: left;
 }
 
 #pic2 {
     left: 500px;
+    top: 20px;
     float: left;
 }
 
 #pic3 {
     left: 60px;
-    top: 350px;
+    top: 320px;
     float: left;
 }
 
 #pic4 {
     left: 500px;
-    top: 350px;
+    top: 320px;
     float: left;
 }
 
 #pic5 {
     left: 60px;
-    top: 600px;
+    top: 620px;
     float: left;
 }
 
 #pic6 {
     left: 500px;
-    top: 600px;
+    top: 620px;
     float: left;
 }
 
 #image1, #image2, #image3, #image4, #image5, #image6 {
     position: absolute;
     width: 400px;
-    /* height: 300px; */
 }
 
 #image3 {
-    height: 300px;
+    height: 266px;
+}
+
+#image6 {
+    height: 267px;;
 }
 
 h3 {
@@ -174,13 +178,15 @@ h3 {
     width: 400px;
 }
 
-#link1:visited, #link2:visited, #link3:visited, #link4:visited #link5:visited #link6:visited { 
-    color: black;
+/* #pic1:visited, #pic2:visited, #pic3:visited, #pic4:visited, #pic5:visited, #pic6:visited { 
+    border-color: red;
+} */
+
+#pic1:hover, #pic2:hover, #pic3:hover, #pic4:hover, #pic5:hover, #pic6:hover {
+    opacity: 0.7;
 }
 
-#link1:hover, #link2:hover, #link3:hover, #link4:hover #link5:hover #link6:hover {
-    color: wheat;
-}
+
     /* Portfolio Section End */
 
 /* Contact Section */
@@ -254,8 +260,7 @@ button {
 }
 
 .social {
-    margin: 0 auto;
-    width: 10%;
+    padding-left: 682px;
     padding-top: 19px;
 }
 

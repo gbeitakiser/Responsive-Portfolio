@@ -15,9 +15,9 @@
     <div id="header">
       <h1>Gabriel Beita-Kiser</h1>
       <nav>
-        <a id="nav1" href="index.html">About</a>
-        <a id="nav2" href="portfolio.html">Portfolio</a>
-        <a id="nav3" href="contact.html">Contact</a>
+        <a id="nav1" href="index.html" style="text-decoration: none;">About</a>
+        <a id="nav2" href="portfolio.html" style="text-decoration: none;">Portfolio</a>
+        <a id="nav3" href="contact.html" style="text-decoration: none;">Contact</a>
       </nav>
     </div>
 
@@ -26,7 +26,7 @@
         <h2 id="c-head">Contact</h2>
       </div>
       <div class="form">
-        <form action="PLACEHOLDER FOR SEND ADDRESS" method="POST">
+        <form action="https://script.google.com/macros/s/AKfycbxXIqW6dzDgChoopAJ9uKtLl1rHWAgJEd25m7I/exec" method="POST" class="gform">
             <div>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="user_name" placeholder=" Your Name">
@@ -40,7 +40,7 @@
                   <textarea id="msg" name="user_message" placeholder="Your message here"></textarea>
               </div>
               <div class="button">
-                <button type="submit">Send</button>
+                <button id="submit-button" type="submit">Send</button>
               </div>
         </form>
       </div>
@@ -57,7 +57,15 @@
         </div>
       </div>
     </div>
-
+    <script type="text/javascript">
+      document.getElementById("submit-button").addEventListener("click", function() {
+        document.getElementById("name").innerHTML = "";
+        document.getElementById("mail").innerHTML = "";
+        document.getElementById("msg").innerHTML = "";
+        alert("Thanks for submitting! I'll get back to you soon.");
+      });    
+    </script>
+    <!-- <script data-cfasync="false" type="text/javascript" src="assets/email/form-submission-handler.js"></script> -->
 </body>
 
 

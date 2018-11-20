@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -26,7 +27,7 @@
         <h2 id="c-head">Contact</h2>
       </div>
       <div class="form">
-        <form action="https://script.google.com/macros/s/AKfycbxXIqW6dzDgChoopAJ9uKtLl1rHWAgJEd25m7I/exec" method="POST" class="gform">
+        <form id="formy-form" method="POST" class="gform">
             <div>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="user_name" placeholder=" Your Name">
@@ -57,15 +58,29 @@
         </div>
       </div>
     </div>
+
     <script type="text/javascript">
-      document.getElementById("submit-button").addEventListener("click", function() {
-        document.getElementById("name").innerHTML = "";
-        document.getElementById("mail").innerHTML = "";
-        document.getElementById("msg").innerHTML = "";
-        alert("Thanks for submitting! I'll get back to you soon.");
-      });    
+// url = 'https://script.google.com/macros/s/AKfycbxXIqW6dzDgChoopAJ9uKtLl1rHWAgJEd25m7I/exec'
+
+      $('#formy-form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            url: "https://script.google.com/macros/s/AKfycbxXIqW6dzDgChoopAJ9uKtLl1rHWAgJEd25m7I/exec",
+            data: $(this).serialize(),
+            type: "POST",
+            dataType: "xml",
+            success: function(data) {
+                console.log('Submission successful');
+                alert("Thank you for submitting! I will get back to you shortly.")
+            },
+            error: function(xhr, status, error) {
+                console.log('Submission failed: ' + error);
+                alert("Thank you for submitting! I will get back to you shortly.")
+            }
+        });
+        $('#formy-form')[0].reset()
+    });
     </script>
-    <!-- <script data-cfasync="false" type="text/javascript" src="assets/email/form-submission-handler.js"></script> -->
 </body>
 
 

@@ -1,7 +1,7 @@
 /* Under The Hood */
 html { 
     background: url("../images/bckgrnd.png") repeat-x 0 0 scroll;
-    background-size: 139%;
+    background-size: 163%;
 }
 
 .wrap {
@@ -101,7 +101,7 @@ p {
 
 .portfolio { 
     background: antiquewhite;
-    height: 990px;
+    height: 1320px;
 }
 
 .blocks {
@@ -111,7 +111,7 @@ p {
     margin-top: 20px;
 }
 
-#pic1, #pic2, #pic3, #pic4, #pic5, #pic6  {
+#pic1, #pic2, #pic3, #pic4, #pic5, #pic6, #pic7, #pic8  {
     position: relative;
 }
 
@@ -151,16 +151,36 @@ p {
     float: left;
 }
 
-#image1, #image2, #image3, #image4, #image5, #image6 {
+#pic7 {
+    left: 60px;
+    top: 920px;
+    float: left;
+}
+
+#pic8 {
+    left: 500px;
+    top: 920px;
+    float: left;
+}
+
+#image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8 {
     position: absolute;
     width: 400px;
 }
 
+#image2 {
+    height: 267px;
+}
+
 #image3 {
+    height: 267px;
+}
+
+#image5 {
     height: 266px;
 }
 
-#image6 {
+#image8 {
     height: 267px;;
 }
 
@@ -173,7 +193,7 @@ h3 {
     text-align: center;
 }
 
-#span1, #span2, #span3, #span4, #span5, #span6 {
+#span1, #span2, #span3, #span4, #span5, #span6, #span7, #span8 {
     position: absolute;
     width: 400px;
 }
@@ -182,7 +202,7 @@ h3 {
     border-color: red;
 } */
 
-#pic1:hover, #pic2:hover, #pic3:hover, #pic4:hover, #pic5:hover, #pic6:hover {
+#pic1:hover, #pic2:hover, #pic3:hover, #pic4:hover, #pic5:hover, #pic6:hover, #pic7:hover, #pic8:hover {
     opacity: 0.7;
 }
 

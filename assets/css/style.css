@@ -1,7 +1,8 @@
 /* Under The Hood */
 html { 
-    background: url("../images/bckgrnd.png") repeat-x 0 0 scroll;
-    background-size: 163%;
+    background: url("../images/bckgrnd.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .wrap {
@@ -101,7 +102,7 @@ p {
 
 .portfolio { 
     background: antiquewhite;
-    height: 1320px;
+    height: 1600px;
 }
 
 .blocks {
@@ -111,7 +112,7 @@ p {
     margin-top: 20px;
 }
 
-#pic1, #pic2, #pic3, #pic4, #pic5, #pic6, #pic7, #pic8  {
+#pic1, #pic2, #pic3, #pic4, #pic5, #pic6, #pic7, #pic8, #pic9, #pic10  {
     position: relative;
 }
 
@@ -163,25 +164,22 @@ p {
     float: left;
 }
 
-#image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8 {
+#pic9 {
+    left: 60px;
+    top: 1220px;
+    float: left;
+}
+
+#pic10 {
+    left: 500px;
+    top: 1220px;
+    float: left;
+}
+
+#image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8, #image9, #image10 {
     position: absolute;
     width: 400px;
-}
-
-#image2 {
     height: 267px;
-}
-
-#image3 {
-    height: 267px;
-}
-
-#image5 {
-    height: 266px;
-}
-
-#image8 {
-    height: 267px;;
 }
 
 h3 {
@@ -193,7 +191,7 @@ h3 {
     text-align: center;
 }
 
-#span1, #span2, #span3, #span4, #span5, #span6, #span7, #span8 {
+#span1, #span2, #span3, #span4, #span5, #span6, #span7, #span8, #span9, #span10 {
     position: absolute;
     width: 400px;
 }
@@ -202,7 +200,7 @@ h3 {
     border-color: red;
 } */
 
-#pic1:hover, #pic2:hover, #pic3:hover, #pic4:hover, #pic5:hover, #pic6:hover, #pic7:hover, #pic8:hover {
+#pic1:hover, #pic2:hover, #pic3:hover, #pic4:hover, #pic5:hover, #pic6:hover, #pic7:hover, #pic8:hover, #pic9:hover, #pic10:hover {
     opacity: 0.7;
 }
 
@@ -300,11 +298,6 @@ button {
 
 @media screen and (max-width: 980px) {
 
-    html {
-        background: url("../images/bckgrnd.png");
-        background-repeat: repeat-y;
-    }
-
     .wrap {
         width: 700px;
         margin: 0 auto;;
@@ -336,10 +329,10 @@ button {
     }
 
     .portfolio {
-        height: 680px;
+        height: 1080px;
     }
 
-    #pic1, #pic2, #pic3, #pic4, #pic5, #pic6  {
+    #pic1, #pic2, #pic3, #pic4, #pic5, #pic6, #pic7, #pic8, #pic9, #pic10  {
         position: relative;
     }
     
@@ -378,18 +371,35 @@ button {
         top: 420px;
         float: left;
     }
+
+    #pic7 {
+        left: 40px;
+        top: 620px;
+        float: left;
+    }
     
-    #image1, #image2, #image3, #image4, #image5, #image6 {
+    #pic8 {
+        left: 410px;
+        top: 620px;
+        float: left;
+    }
+
+    #pic9 {
+        left: 40px;
+        top: 820px;
+        float: left;
+    }
+    
+    #pic10 {
+        left: 410px;
+        top: 820px;
+        float: left;
+    }
+    
+    #image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8, #image9, #image10 {
         position: absolute;
         width: 250px;
-    }
-    
-    #image3 {
         height: 168px;
-    }
-    
-    #image6 {
-        height: 168px;;
     }
 
     .blocks {
@@ -397,18 +407,13 @@ button {
 
     }
 
-    #span1, #span2, #span3, #span4, #span5, #span6 {
+    #span1, #span2, #span3, #span4, #span5, #span6, #span7, #span8, #span9, #span10 {
     position: absolute;
     width: 250px;
 
 }
 
 @media screen and (max-width: 768px) {
-
-    html {
-        background: url("../images/bckgrnd.png");
-        background-repeat: repeat-y;
-    }
 
     .wrap {
         width: 728px;
@@ -442,7 +447,7 @@ button {
         width: 690px;
     }
 
-    #pic1, #pic2, #pic3, #pic4, #pic5, #pic6  {
+    #pic1, #pic2, #pic3, #pic4, #pic5, #pic6, #pic7, #pic8, #pic9, #pic10  {
         position: relative;
     }
     
@@ -481,18 +486,35 @@ button {
         top: 420px;
         float: left;
     }
+
+    #pic7 {
+        left: 40px;
+        top: 620px;
+        float: left;
+    }
     
-    #image1, #image2, #image3, #image4, #image5, #image6 {
+    #pic8 {
+        left: 440px;
+        top: 620px;
+        float: left;
+    }
+
+    #pic9 {
+        left: 40px;
+        top: 820px;
+        float: left;
+    }
+    
+    #pic10 {
+        left: 440px;
+        top: 820px;
+        float: left;
+    }
+    
+    #image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8, #image9, #image10 {
         position: absolute;
         width: 250px;
-    }
-    
-    #image3 {
         height: 168px;
-    }
-    
-    #image6 {
-        height: 168px;;
     }
 
     .blocks {
@@ -500,7 +522,7 @@ button {
 
     }
 
-    #span1, #span2, #span3, #span4, #span5, #span6 {
+    #span1, #span2, #span3, #span4, #span5, #span6, #span7, #span8, #span9, #span10 {
     position: absolute;
     width: 250px;
 
@@ -509,11 +531,6 @@ button {
 }
 
 @media screen and (max-width: 640px) {
-
-    html {
-        background: url("../images/bckgrnd.png");
-        background-repeat: repeat-y;
-    }
 
     .wrap {
         width: 600px;
@@ -555,7 +572,7 @@ button {
     }
 
 
-    #pic1, #pic2, #pic3, #pic4, #pic5, #pic6  {
+    #pic1, #pic2, #pic3, #pic4, #pic5, #pic6, #pic7, #pic8, #pic9, #pic10  {
         position: relative;
     }
     
@@ -594,18 +611,35 @@ button {
         top: 420px;
         float: left;
     }
+
+    #pic7 {
+        left: 40px;
+        top: 620px;
+        float: left;
+    }
     
-    #image1, #image2, #image3, #image4, #image5, #image6 {
+    #pic8 {
+        left: 310px;
+        top: 620px;
+        float: left;
+    }
+
+    #pic9 {
+        left: 40px;
+        top: 820px;
+        float: left;
+    }
+    
+    #pic10 {
+        left: 310px;
+        top: 820px;
+        float: left;
+    }
+    
+    #image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8, #image9, #image10 {
         position: absolute;
         width: 250px;
-    }
-    
-    #image3 {
         height: 168px;
-    }
-    
-    #image6 {
-        height: 168px;;
     }
 
     .blocks {
@@ -613,7 +647,7 @@ button {
 
     }
 
-    #span1, #span2, #span3, #span4, #span5, #span6 {
+    #span1, #span2, #span3, #span4, #span5, #span6, #span7, #span8, #span9, #span10 {
     position: absolute;
     width: 250px;
 
